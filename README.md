@@ -1,1 +1,1 @@
-# code-katas-2
+# code-katas
