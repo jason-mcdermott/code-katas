@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindPairsThatSumToN", "FindPairsThatSumToN\FindPairsThatSumToN.csproj", "{38267893-E163-4049-A986-3E36F92F077E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38267893-E163-4049-A986-3E36F92F077E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38267893-E163-4049-A986-3E36F92F077E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38267893-E163-4049-A986-3E36F92F077E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38267893-E163-4049-A986-3E36F92F077E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F28E9FD-9E18-4825-90AB-BB2472A00A4A}
+	EndGlobalSection
+EndGlobal
