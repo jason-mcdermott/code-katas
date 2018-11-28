@@ -26,7 +26,7 @@ function optimized(){
     let sum = 0;
 
     for(let i = 999; i >= 3; i = i - 3){
-        // check to make sure value has not been ingit cluded already
+        // check to make sure value has not been included already
         if(dict.get(i) == undefined){
             dict.set(i, i);
             sum += i;
