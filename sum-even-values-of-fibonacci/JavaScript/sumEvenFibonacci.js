@@ -26,4 +26,5 @@ function sumEvenFibonacci(max) {
     return sum;
 }
 
+// 4,613,732
 console.log(sumEvenFibonacci(4000000));
