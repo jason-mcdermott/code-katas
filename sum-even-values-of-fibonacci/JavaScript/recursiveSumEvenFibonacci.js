@@ -26,4 +26,5 @@ function recursiveSumEvenFibonacci(a, b, sum) {
 
 let max = 4000000;
 
+// 4,613,732
 console.log(recursiveSumEvenFibonacci(1, 2, 2));
