@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumEvenValuesOfFibonacci", "SumEvenValuesOfFibonacci\SumEvenValuesOfFibonacci.csproj", "{4FC896F9-D980-4C3E-896A-037F84FF281C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FC896F9-D980-4C3E-896A-037F84FF281C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FC896F9-D980-4C3E-896A-037F84FF281C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FC896F9-D980-4C3E-896A-037F84FF281C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FC896F9-D980-4C3E-896A-037F84FF281C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1B49179-2632-43CE-89D2-AF1165B59941}
+	EndGlobalSection
+EndGlobal
