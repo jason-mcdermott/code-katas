@@ -12,15 +12,13 @@
 
 function find () {
     for(let i = 999; i >= 100; i--){
-        counter += 1;
         let a = i * i;
-        //console.log(`${i} * ${i} = ${a}`);
         let b = i * (i - 1);
-        //console.log(`${i} * ${i-1} = ${b}`);
         if(isPalindrome(a)) {
-            return [a, i, i];
-        }else if(isPalindrome(b)){
-            return [b, i, i-1];
+            return `${a} = ${i} * ${i}`;
+        }
+        else if(isPalindrome(b)){
+            return `${b} = ${i} * ${i-1}`;
         }
     }
 }
@@ -35,22 +33,22 @@ function isPalindrome (number) {
     let j = rh.length - 1;
 
     while(i < lh.length && j < rh.length){
-        //console.log(`lh[i]: ${lh[i]} rh[j]: ${rh[j]}`);
         if(lh[i] !== rh[j]) {
             return false;
-        } 
+        }
         i++; 
-        j--
+        j--;
         continue;
     }
+
     return true;
 }
 
-// test isPalindrome function:
+// Test isPalindrome function:
 // console.log(isPalindrome(990099)); // true
 // console.log(isPalindrome(99099));  // true
 // console.log(isPalindrome(990091)); // false
 // console.log(isPalindrome(99091));  // false
 
+// Solution: [ 698896, 836, 836 ]
 console.log(find());
-console.log(counter);
