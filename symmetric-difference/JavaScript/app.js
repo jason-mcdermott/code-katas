@@ -3,6 +3,7 @@
 // Create a function that takes two or more arrays and returns an array 
 // of the symmetric difference (△ or ⊕) of the provided arrays.
 
+// original solution...
 function sym(...args) {
     let arrays = [];
     args.forEach(arr => arrays.push(arr));
@@ -30,6 +31,22 @@ function sym(...args) {
     });
         
     return final;
+}
+
+// more elegant solution...
+function diffArray(arr1, arr2) {
+    let final = [];
+    for(let item of arr1){
+        let index = arr2.indexOf(item);
+        if(index === -1){
+            final.push(item);
+        }
+        else {
+            arr2.splice(index, 1);
+        }
+    }
+  
+    return final.concat(arr2);
 }
 
 console.log(sym([1, 2, 3], [5, 2, 1, 4]));
