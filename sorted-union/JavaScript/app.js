@@ -8,7 +8,7 @@
 //  The unique numbers should be sorted by their original order, but the 
 //  final array should not be sorted in numerical order.
 
-function uniteUnique(...arr) {
+function uniteUnique1(...arr) {
     for(let i = 1; i < arr.length; i++){
         for(let j = 0; j < arr[i].length; j++){
             if(arr[0].indexOf(arr[i][j]) < 0){
@@ -19,8 +19,22 @@ function uniteUnique(...arr) {
     
     return arr[0];
 }
+
+function uniteUnique2(...arr) {
+    let map = new Map();
+    let result = [];
+    for(let sub of arr){
+        for(let s of sub){
+            map.set(s);
+        }
+    }
+    
+    map.forEach((val, key) => result.push(key));
   
-console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1])); // should return [1, 3, 2, 5, 4].
-console.log(uniteUnique([1, 3, 2], [1, [5]], [2, [4]])); // should return [1, 3, 2, [5], [4]].
-console.log(uniteUnique([1, 2, 3], [5, 2, 1])); // should return [1, 2, 3, 5].
-console.log(uniteUnique([1, 2, 3], [5, 2, 1, 4], [2, 1], [6, 7, 8])); // should return [1, 2, 3, 5, 4, 6, 7, 8].
+    return result;
+  }
+  
+console.log(uniteUnique1([1, 3, 2], [5, 2, 1, 4], [2, 1])); // should return [1, 3, 2, 5, 4].
+console.log(uniteUnique1([1, 3, 2], [1, [5]], [2, [4]])); // should return [1, 3, 2, [5], [4]].
+console.log(uniteUnique1([1, 2, 3], [5, 2, 1])); // should return [1, 2, 3, 5].
+console.log(uniteUnique1([1, 2, 3], [5, 2, 1, 4], [2, 1], [6, 7, 8])); // should return [1, 2, 3, 5, 4, 6, 7, 8].
